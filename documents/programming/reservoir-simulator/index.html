@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>PET 505 ASSIGNMENT</title>
+        <meta charset='utf-8'/>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/simulation.js'></script>
+        <link rel='stylesheet' href='css/tooth.css'/>
+        <link rel='stylesheet' href='css/simulation.css'/>
+    </head>
+    <body><i>
+        <div class='container-wide one'>
+            <form class='form-box'>
+                <fieldset>
+                    <div class='left'>
+                        <label>boundary condition</label>
+                        <select id='boundary_condition' class='right'>
+                            <option value='flow'>flow</option>
+                            <option value='noflow'>No flow</option>
+                            <option value='constantflow'>flow with assumption of constant pressure on gridblock 1</option>
+                        </select>
+                        <br><br>
+                            <label>pressure (psia)</label>
+                            <input type='text' id='init_press' class='right'/>
+                        <br><br>
+                    </div>
+                    <div class='right'>
+                        <button type='button' class='btn-orange' id='calc'>run pressure distribution across gridblock
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+            <form class='form-box'>
+                <fieldset>
+                    <div class='left'>
+                        <label>number of gridblocks</label>
+                        <input type='text' id='gbcount' class='right'/>
+                        <br><br>
+                        <label>flowrate(q)</label>
+                        <input type='text' id='q' class='right'/>
+                        <br><br>
+                        <label>where q occurs</label>
+                        <input type='text' id='q_occurs' class='right'/>
+                        <br><br>
+                        <label>x (ft)</label>
+                        <input type='text' id='x' class='right'/>
+                        <br><br>
+                        <label>y (ft)</label>
+                        <input type='text' id='y' class='right'/>
+                        <br><br>
+                        <label>z (ft)</label>
+                        <input type='text' id='z' class='right'/>
+                        <br><br>
+                    </div>
+                    
+                    
+                    <div class='right'>
+                        <label>a (conversion factor)</label>
+                        <input type='text' id='a' value='5.615' class='right'/>
+                        <br><br>
+                        <label>B<sub>l</sub></label>
+                        <input type='text' id='Bl' class='right'/>
+                        <br><br>
+                        <label>B<sup>o</sup><sub>l</sub></label>
+                        <input type='text' id='Blo' class='right'/>
+                        <br><br>
+                        <label>porosity</label>
+                        <input type='text' id='por' class='right'/>
+                        <br><br>
+                        <label>viscosity(cp)</label>
+                        <input type='text' id='visc' class='right'/>
+                        <br><br>
+                        <label>compressibility in psi<sup>-1</sup></label>
+                        <input type='text' id='comp' class='right'/>
+                        <br><br>
+                        <label>permeability (k<sub>x</sub>) in Darcy</label>
+                        <input type='text' id='k' class='right'/>
+                    </div>
+                </fieldset>
+            </form>
+            <form class='form-box'>
+                <fieldset>
+                    <div class='left'>
+                        <label>days to test for</label>
+                        <input type='text' id='n' class='right'/>
+                        <br><br>
+                        <label>timesteps in days</label>
+                        <input type='text' id='tInterval' class='right'/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        </i>
+    </body>
+</html>

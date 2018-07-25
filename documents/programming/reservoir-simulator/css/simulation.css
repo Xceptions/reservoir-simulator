@@ -1,0 +1,35 @@
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.group_details{
+    clear: both;
+    display: none;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boldtext{
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.header{
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two{
+    display: none;
+}
